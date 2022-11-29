@@ -10,7 +10,7 @@ int main()
     while(1) 
     {
 	/* Display menu to user */
-	printf("0.Exit\n1. insert_at_last\n2.Print list\nEnter your choice : ");
+	printf("0.Exit\n1.Insert_at_Begining\n2.Insert_at_End\n3.Print list\nEnter your choice : ");
 	scanf("%d", &choice);
 
 	switch (choice)
@@ -18,16 +18,21 @@ int main()
 	    case 0:
 		printf("Exitinf from the Program....\n");
 		exit(EXIT_SUCCESS);
-	    case 1: /* insert at last */
+	    case 1:
+	        printf("Enter the data to insert a t Begining :");
+	        scanf("%d",&data);
+	        head = insert(head,data);
+		break;	
+	    case 2: /* insert at last */
 
 		printf("Enter the new data to be inserted : ");
 		scanf("%d", &data);
 
-		head = insert(head,data);
+		head = insert_all(head,data);
 		
 		break;
 
-	    case 2: /* print list */
+	    case 3: /* print list */
 		print(head);
 		break;
 
