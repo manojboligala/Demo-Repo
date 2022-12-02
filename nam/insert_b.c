@@ -1,6 +1,6 @@
 #include"list.h"
 
-struct node *insert(struct node * head,int data)
+struct node *insert_b(struct node * head,int data)
 {
     
     struct node *new = malloc(sizeof(struct node));
