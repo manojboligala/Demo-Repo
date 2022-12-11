@@ -19,8 +19,8 @@ struct node * bubbleSort (struct node * head)
   {
     for(i=0;i<(numNode-1);i++)
     {
-	    for(j =0 ;j< numNode - i - 1; j++)
-	    {
+	   // for(j =0 ;j< numNode - i - 1; j++)
+	   // {
        
        
            if(temp[0]->a > temp[1]->a)
@@ -31,7 +31,7 @@ struct node * bubbleSort (struct node * head)
 	    temp[0]=temp[1];
 	    temp[1]=temp[0]->next;
 	     
-	    }	
+	   // }	
      }
    }
    return head;
